@@ -27,4 +27,9 @@ set -x
 echo "NAME: $NAME"
 echo "VERSION: $VERSION"
 
+ls -l /var/jenkins_home/workspace/Github_pipeline/target
+
+echo "Absolute path: $(pwd)/target/${NAME}-${VERSION}.jar"
+
+
 java -jar $(pwd)/target/${NAME}-${VERSION}.jar
