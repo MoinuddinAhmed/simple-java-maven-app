@@ -27,4 +27,4 @@ set -x
 echo "NAME: $NAME"
 echo "VERSION: $VERSION"
 
-java -jar target/${NAME}-${VERSION}.jar
+java -jar $(pwd)/target/${NAME}-${VERSION}.jar
